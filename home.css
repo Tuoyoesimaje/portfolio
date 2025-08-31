@@ -45,7 +45,7 @@ body {
     }
 
   .main-head {
-    font-size: 96px;
+    font-size: 106px;
     margin: 0;
     margin-left: -8px;
     position: absolute;
@@ -65,7 +65,7 @@ body {
     width: 90%;
     align-items: center;
     font-size: 12px;
-    margin-top: 106px;
+    margin-top: 114px;
   }
 
   .btn{
