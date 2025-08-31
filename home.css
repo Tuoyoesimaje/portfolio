@@ -1,0 +1,117 @@
+
+body {
+      margin: 0;
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .half {
+      height: 100%;
+    }
+
+    .image-half {
+      background: url('WhatsApp Image 2025-08-28 at 13.59.29_a4ae74d1.jpg')no-repeat center;
+      background-size: cover;
+      flex: 1;
+
+    }
+
+    .color-half {
+      flex: 2;
+      background-color: #2f4344;
+      display: flex; 
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .header {
+      font-size: 50px;
+      color: #fff;
+      margin-left: 20px;
+      margin-top: 20px;
+      font-family:'Courier New', Courier, monospace;
+    }
+
+    .text {
+      color: #fff;
+      align-items: center;
+      margin: 0;
+    }
+
+    .sub-head {
+      font-size: 17px;
+      margin-top: -10px;
+    }
+
+  .main-head {
+    font-size: 96px;
+    margin: 0;
+    margin-left: -8px;
+    position: absolute;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    align-items: center;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 200px;
+  }
+
+  .pt{
+    width: 90%;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 106px;
+  }
+
+  .btn{
+    border: none;
+    background: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+
+  }
+
+  .btn-container{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: -6px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .socials{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socials-container{
+    display: flex;
+  }
+
+  .social-links {
+    filter: invert(1);
+    width: 15px;
+    margin-right: 5px;
+  }
+
+  .menu-container{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+  }
+
+  .menu-p{
+    margin-right: 15px;
+  }
+
+  .menu{
+    width: 50px;
+  }
