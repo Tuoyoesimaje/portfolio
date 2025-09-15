@@ -14,7 +14,6 @@ body {
       background: url('WhatsApp Image 2025-08-28 at 13.59.29_a4ae74d1.jpg')no-repeat center;
       background-size: cover;
       flex: 1;
-
     }
 
     .color-half {
@@ -73,7 +72,7 @@ body {
     background: none;
     color: white;
     font-family: "Montserrat", sans-serif;
-
+    cursor: pointer;
   }
 
   .btn-container{
@@ -114,4 +113,46 @@ body {
 
   .menu{
     width: 50px;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+
+    .color-half, .image-half {
+      flex: 1 1 100%;
+    }
+
+    .text-container {
+      margin-left: 20px;
+      margin-right: 20px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .main-head {
+      font-size: 60px;
+      position: static;
+      margin-left: 0;
+    }
+
+    .pt {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .socials {
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .text-container {
+      margin-left: 100px;
+    }
+
+    .main-head {
+      font-size: 80px;
+    }
   }
