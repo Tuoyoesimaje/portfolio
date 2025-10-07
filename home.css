@@ -215,21 +215,20 @@ body {
   z-index: 1000;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
-  width: 400px;
+  transform: translate(-50%, -50%);
+  width: 350px;
   max-height: 80vh;
   background: var(--default-end) linear-gradient(135deg, var(--default-start) 0%, var(--default-mid1) 30%, var(--default-mid2) 60%, var(--default-end) 100%);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   opacity: 0;
-  transition: all 0.3s ease-out;
+  transition: opacity 0.3s ease;
 }
 
 .modal.show {
   display: block;
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
 }
 
 .modal-backdrop {
@@ -239,11 +238,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 999;
   opacity: 0;
-  transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease;
 }
 
 .modal-backdrop.show {
@@ -252,7 +250,7 @@ body {
 }
 
 .modal-content {
-  padding: 25px;
+  padding: 20px;
   max-height: 70vh;
   overflow-y: auto;
 }
@@ -261,82 +259,63 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .modal-header h3 {
   color: white;
   margin: 0;
-  font-size: 28px;
-  font-weight: 300;
+  font-size: 24px;
 }
 
 .close {
   color: #ccc;
-  font-size: 32px;
-  font-weight: 200;
+  font-size: 24px;
   cursor: pointer;
-  transition: all 0.3s;
-  line-height: 1;
+  transition: color 0.3s;
 }
 
 .close:hover {
   color: white;
-  transform: rotate(90deg);
 }
 
 .projects-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.project-item {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 15px;
-}
-
-.project-item:last-child {
-  border-bottom: none;
+  gap: 15px;
 }
 
 .project-item h4 {
   color: white;
-  margin: 0 0 12px 0;
-  font-size: 20px;
-  font-weight: 400;
+  margin: 0 0 8px 0;
+  font-size: 18px;
 }
 
 .project-links {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .project-link {
-  padding: 10px 15px;
-  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
   color: white;
   text-decoration: none;
-  border-radius: 25px;
-  font-size: 14px;
-  transition: all 0.3s;
-  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: background 0.3s;
 }
 
 .project-link:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.4);
-  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .project-link.live {
-  background: rgba(0, 200, 0, 0.2);
-  border-color: rgba(0, 200, 0, 0.3);
+  background: rgba(0, 150, 0, 0.2);
 }
 
 .project-link.live:hover {
-  background: rgba(0, 200, 0, 0.3);
-  border-color: rgba(0, 200, 0, 0.5);
+  background: rgba(0, 150, 0, 0.3);
 }
 
 /* Theme-aware modal background */
