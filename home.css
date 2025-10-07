@@ -297,25 +297,30 @@ body {
 }
 
 .project-link {
-  padding: 8px 12px;
-  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.15);
   color: white;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 12px;
-  transition: background 0.3s;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: all 0.3s;
+  border: 1px solid transparent;
 }
 
 .project-link:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
 }
 
 .project-link.live {
-  background: rgba(0, 150, 0, 0.2);
+  background: rgba(0, 200, 0, 0.2);
+  border-color: rgba(0, 200, 0, 0.3);
 }
 
 .project-link.live:hover {
-  background: rgba(0, 150, 0, 0.3);
+  background: rgba(0, 200, 0, 0.3);
+  border-color: rgba(0, 200, 0, 0.5);
 }
 
 /* Theme-aware modal background */
