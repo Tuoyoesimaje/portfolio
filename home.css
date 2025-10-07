@@ -79,6 +79,7 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     color: #fff;
     align-items: center;
+    z-index: 20;
   }
 
   .text-container {
@@ -124,7 +125,7 @@ body {
    border: none;
    cursor: pointer;
    padding: 10px;
-   margin-left: 10px;
+   margin-left: 5px;
  }
 
  .theme-icon {
