@@ -1,4 +1,22 @@
+:root {
+  /* Default theme */
+  --default-start: #1e293b;
+  --default-mid1: #334155;
+  --default-mid2: #475569;
+  --default-end: #64748b;
 
+  /* Forest theme */
+  --forest-start: #f0fdf4;
+  --forest-mid1: #d9f99d;
+  --forest-mid2: #a3a3a3;
+  --forest-end: #92400e;
+
+  /* Galaxy theme */
+  --galaxy-start: #2d1b69;
+  --galaxy-mid1: #3730a3;
+  --galaxy-mid2: #7c3aed;
+  --galaxy-end: #c026d3;
+}
 body {
       margin: 0;
       height: 100vh; /* Full viewport height */
@@ -18,10 +36,20 @@ body {
 
     .color-half {
       flex: 2;
-      background-color: #2f4344;
-      display: flex; 
+      background: var(--default-end) linear-gradient(135deg, var(--default-start) 0%, var(--default-mid1) 30%, var(--default-mid2) 60%, var(--default-end) 100%);
+      display: flex;
       flex-direction: column;
       justify-content: space-between;
+    }
+
+    /* Forest theme */
+    [data-theme="forest"] .color-half {
+      background: var(--forest-end) linear-gradient(135deg, var(--forest-start) 0%, var(--forest-mid1) 30%, var(--forest-mid2) 70%, var(--forest-end) 100%);
+    }
+
+    /* Galaxy theme */
+    [data-theme="galaxy"] .color-half {
+      background: var(--galaxy-end) linear-gradient(135deg, var(--galaxy-start) 0%, var(--galaxy-mid1) 30%, var(--galaxy-mid2) 60%, var(--galaxy-end) 100%);
     }
 
     .header {
@@ -85,11 +113,28 @@ body {
   }
 
   .socials{
-    margin-bottom: 20px;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-  }
+   margin-bottom: 20px;
+   margin-left: 20px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .theme-icon-btn {
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 10px;
+   margin-left: 10px;
+ }
+
+ .theme-icon {
+   width: 24px;
+   height: 24px;
+ }
+
+ .theme-icon-btn:hover .theme-icon {
+   opacity: 0.7;
+ }
 
   .socials-container{
     display: flex;
