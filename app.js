@@ -1,6 +1,27 @@
 //Variables
 const contactBtn = document.querySelector('.btn');
 
+// Modal functionality
+const modal = document.getElementById('projects-modal');
+const backdrop = document.getElementById('modal-backdrop');
+const menuIcon = document.getElementById('menu-icon');
+const closeBtn = document.querySelector('.close');
+
+menuIcon.addEventListener('click', function() {
+  modal.classList.add('show');
+  backdrop.classList.add('show');
+});
+
+closeBtn.addEventListener('click', function() {
+  modal.classList.remove('show');
+  backdrop.classList.remove('show');
+});
+
+backdrop.addEventListener('click', function() {
+  modal.classList.remove('show');
+  backdrop.classList.remove('show');
+});
+
 // Theme switching
 const themeBtn = document.getElementById('theme-btn');
 const themeIcon = document.querySelector('.theme-icon');

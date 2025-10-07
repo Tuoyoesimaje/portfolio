@@ -46,12 +46,35 @@
     <div class="menu-container">
       <!--<a href="projects.html"><p class="menu-p">Projects</p></a>-->
 
-      <img src="menu.png" alt="" class="menu"></a>
+      <img src="menu.png" alt="" class="menu" id="menu-icon">
       <button id="theme-btn" class="theme-icon-btn">
         <img class="theme-icon" src="storm-svgrepo-com.svg" alt="theme icon">
       </button>
     </div>
   </div>
+
+  <!-- Modal Backdrop -->
+  <div id="modal-backdrop" class="modal-backdrop"></div>
+
+  <!-- Projects Modal -->
+  <div id="projects-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Projects</h3>
+        <span class="close">&times;</span>
+      </div>
+      <div class="projects-list">
+        <div class="project-item">
+          <h4>XClone</h4>
+          <div class="project-links">
+            <a href="https://github.com/Tuoyoesimaje/team-X" target="_blank" class="project-link">Repository</a>
+            <a href="https://tuoyoesimaje.github.io/team-X/" target="_blank" class="project-link live">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="app.js"></script>
 </body>
 </html>
