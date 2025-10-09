@@ -158,7 +158,12 @@ body {
   }
 
   .menu{
-    width: 50px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .menu:hover{
+    color: grey;
   }
 
   @media (max-width: 768px) {
