@@ -72,7 +72,7 @@ body {
     }
 
   .main-head {
-    font-size: 106px;
+    font-size: 95px;
     margin: 0;
     margin-left: -8px;
     position: absolute;
@@ -93,7 +93,7 @@ body {
     width: 90%;
     align-items: center;
     font-size: 12px;
-    margin-top: 114px;
+    margin-top: 103px;
   }
 
   .btn{
@@ -210,6 +210,22 @@ body {
 
     .main-head {
       font-size: 80px;
+    }
+    .pt{
+      margin-top: 86px;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1250px) {
+    .text-container {
+      margin-left: 100px;
+    }
+
+    .main-head {
+      font-size: 90px;
+    }
+    .pt{
+      margin-top: 96px;
     }
   }
 
