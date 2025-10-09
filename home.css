@@ -160,6 +160,7 @@ body {
   .menu{
     font-size: 15px;
     cursor: pointer;
+    font-weight: 600;
   }
 
   .menu:hover{
